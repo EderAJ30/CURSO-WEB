@@ -9,6 +9,12 @@ body {
   font-family: sans-serif;
 }
 
-img {
+img,
+video {
   width: 200px;
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
 }
