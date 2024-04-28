@@ -12,7 +12,7 @@
 <body>
         <h2 id="inicio">Aprediendo HTML</h2>
             <p>HOLA MUNDO</p>
-            <p>xjhjhjhxddjd</p>
+            <p>Hola github</p>
             <h3>Temario del curso</h3>
             <ul>
                 <li><a href="index.html#encabezados">Tema encabezado</a></li>
@@ -341,23 +341,126 @@
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="frames">Iframes</h2>
-        <iframe src="indexDos.html" frameborder="0"></iframe>
+        <!--iframe src="/media/PREVIO 7 TRABAJO EN CASA.pdf" frameborder="0"></iframe-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM?si=an9o0ydR8Yi3x8DD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br>
-        <p>xdddddddddd</p>
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
-
-
-
-
-
         <h2 id="formulario">Elementos de Formularios</h2>
+        <h3>Elemento de formulario</h3>
+        <input type="text" name="" id="">
+        <br>
+        <input type="checkbox" name="" id="">
+        <br>
+        <input type="radio" name="" id="">
+        <br>
+        <input type="date" name="" id="">
+        <br>
+        <input type="button" value="Boton">
+        <br>
+        <input type="color">
+        <br>
+        <input type="submit" name="" id="">
+        <br>
+        <input type="reset" name="" id="">
+        <br>
+        <input type="file" multiple>
+        <br>
+        <input type="hidden" name="idioma" value="es">
+        <br>
+        <input type="email" name="" id="">
+        <br>
+        <input type="number" name="" id="">
+        <br>
+        <input type="tel" name="" id="">
+        <br>
+        <input type="password" name="" id="">
+        <br>
+        <input type="search" name="" id="">
+        <br>
+        <textarea name="" id="" cols="50" rows="5"></textarea>
+        <br>
+        <select name="" id="" multiple>
+            <option value="HTML">HTML</option>
+            <option value="HTML">CSS</option>
+            <option value="HTML">JAVASCRIPT</option>
+            <option value="HTML">REACT</option>
+            <option value="HTML">GRID Y FLEXBOX</option>
+        </select>
+        <br>
+        <input type="text" readonly value="eder">
+        <br>
+        <input type="text" readonly disabled>
+        <br>
+        <input type="text" placeholder="Escribe tu nombre">
+        <br>
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="input">Atributos de Inputs y Formularios</h2>
+        <h3>Ejemplo</h3>
+        <h4>Login</h4>
+        <form action="" method="post" autocomplete="off">
+            <label for="usuario">Usuario:</label>                                                          <!--<form action="" method="get"> <form action="" method="post" autocomplete="on">  -->
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" pattern="^[A-Za-z]+$" title="Solo acepta letras en M y m" required>   <!--Si o si name para mandar la info-->
+            <br>
+            <label for="contrasena">Contrasena:</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="Contrasena" pattern="" required>
+            <br>
+            <input type="submit" name="" id="">
+            <br>
+            <input type="reset" name="" id="">
+            <br>
+        </form>
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="radios">Selects, Radios y Checkboxs</h2>
+        <form>
+            <p>Elige tu idioma</p>
+            <select name="idioma" required>
+                <option value="" selected>Elige tu idioma</option>
+                <option value="es">Espanol</option>
+                <option value="en">Ingles</option>
+                <option value="fr">Francia</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugues</option>
+            </select>
+            <p>Elige tu lenguaje de programacion favorito</p>
+            <input type="radio" name="lenguaje" id="radio_js" value="js" required>
+            <label for="radio_js">JavaScript</label>
+            <input type="radio" name="lenguaje" id="radio_py" value="py"> <!--check requieres-->
+            <label for="radio_py">Python</label>
+            <input type="radio" name="lenguaje" id="radio_c" value="c">
+            <label for="radio_js">C</label>
+            <p>Elige tus intereses</p>
+            <label>
+                <input type="checkbox" name="Intereses" value="deportes">
+                Deportes
+            </label>
+            <label>
+                <input type="checkbox" name="Intereses" value="finanzas">
+                Finanzas
+            </label>
+            <label>
+                <input type="checkbox" name="Intereses" value="salud">
+                Salud
+            </label>
+            <label>
+                <input type="checkbox" name="Intereses" value="politica">
+                Politica
+            </label>
+            <label>
+                <input type="checkbox" name="Intereses" value="ecologia">
+                Ecologia
+            </label>
+            <br>
+            <input type="submit" name="" id="">
+            <br>
+            <input type="reset" name="" id="">
+        </form>
+
+
+
+
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="contacto">Formulario de Contacto</h2>
