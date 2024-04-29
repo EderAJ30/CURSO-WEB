@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="assets/style.css">
      <!-- description - no más de 165 caracteres -->
     <meta name="description" content="APRENDER HTML PAPU PRO">
+    <link rel="canonical" href="https://tu-url-canonica">
+    <link rel="icon" href="/img/Copia de damn.png">                 <!-- para cel-->
+    <link rel="apple-touch-icon" href="/img/Copia de damn.png">
+    <meta name="theme-color" content="#5e0b0b">
+    <meta property="og:title" content="Aprendiendo HTML">   
+     <meta property="og:description" content="APRENDER HTML PAPU PRO">                   
 </head>
 <body>
         <h2 id="inicio">Aprediendo HTML</h2>
@@ -437,11 +443,11 @@
                 Deportes
             </label>
             <label>
-                <input type="checkbox" name="Intereses" value="finanzas">
+                <input type="checkbox" name="Intereses" value="finanzas" checked>
                 Finanzas
             </label>
             <label>
-                <input type="checkbox" name="Intereses" value="salud">
+                <input type="checkbox" name="Intereses" value="salud" required >
                 Salud
             </label>
             <label>
@@ -452,21 +458,39 @@
                 <input type="checkbox" name="Intereses" value="ecologia">
                 Ecologia
             </label>
+            <p>
+              <label>
+                <input type="checkbox" name="terminos " required>
+                Aceptas terminos y condiciones
+              </label>
+            </p>
             <br>
-            <input type="submit" name="" id="">
+            <input type="submit">
             <br>
-            <input type="reset" name="" id="">
+            <input type="reset">
         </form>
-
-
-
-
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="contacto">Formulario de Contacto</h2>
+        <form action="" method="post">
+          <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre, solo acepta letras y espacios en blanco">
+          <br><br>
+          <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Correo invalido" required>
+          <br><br>
+          <textarea name="comentarios" id="" cols="30" rows="10" required></textarea>
+          <br><br>
+          <input type="submit">
+        </form>
+        <br>
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="data">DataAtributtes</h2>
+        <ul>
+          <li data-id="1"data-name="spring">Primavera</li>
+          <li data-id="2"data-name="summer">Verano</li>
+          <li data-id="3"data-name="autumn">Otoño</li>
+          <li data-id="4"data-name="winter">Invierno</li>
+        </ul>
         <a href="index.html#inicio"><small>🆙</small></a>
         <hr>
         <h2 id="meta">Metaetiquetas para SEO y Móviles</h2>
