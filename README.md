@@ -16,7 +16,7 @@
    - Introducción a JavaScript
 
 2. **Desarrollo Frontend**
-   - Frameworks React
+   - Frameworks React y Angular
    - Manipulación del DOM con JavaScript
    - Diseño responsivo y adaptativo
 
@@ -27,7 +27,7 @@
 
 4. **Herramientas y Tecnologías Avanzadas**
    - Versionado con Git
-   - Despliegue en la nube (Heroku, AWS, etc.)
+   - Despliegue en la nube (AWS, etc.)
    - Optimización de rendimiento y seguridad
 
 ## ¿Cómo Usar Este Repositorio? 🚀
