@@ -4,7 +4,7 @@
 
 ## Bienvenido al Repositorio del Curso de Desarrollo Web 🐐💽
 
-¡Hola y bienvenido al curso de Desarrollo Web! Este repositorio esta hecho para subir mis commits de mi curso de desarrollo web con el fin de aprender nuevas tecnologias
+¡Hola y bienvenido a mi repositorio teorico y practico de Desarrollo Web! Este repositorio esta hecho para subir mis commits de mi curso de desarrollo web con el fin de aprender nuevas tecnologias
 
 ## Contenido 📚
 
