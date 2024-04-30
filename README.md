@@ -1,8 +1,8 @@
-# Repositorio de Curso de Desarrollo Web
+# Repositorio de Curso de Desarrollo Web de EderAJ30
 
 ---
 
-## Bienvenido al Repositorio del Curso de Desarrollo Web 🌟
+## Bienvenido al Repositorio del Curso de Desarrollo Web 🐐💽
 
 ¡Hola y bienvenido al curso de Desarrollo Web! Este repositorio esta hecho para subir mis commits de mi curso de desarrollo web con el fin de aprender nuevas tecnologias
 
