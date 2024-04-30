@@ -1,0 +1,29 @@
+/* 
+Comentario en CSS
+
+Regla CSS consta de 2 partes 
+ 1) el selector
+ 2) bloque de declaraciones: {
+  atributo: valor;
+  atributo-de-mas-dos-palabras: otro-valor;
+}
+*/
+
+h1 {
+  color: white;
+  background-color: #074173;
+  text-align: center;
+}
+
+/*
+    Selectores basicos 
+    1) Etiquetas son elementos html
+    2) Identificadores atributo id #
+    3) Clase atributo class .
+*/
+
+body {
+  background-color: #0d1117; /* Color oscuro de fondo */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px;
+}
