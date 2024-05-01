@@ -1,5 +1,6 @@
 /* 
 Comentario en CSS
+A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
 
 Regla CSS consta de 2 partes 
  1) el selector
@@ -7,23 +8,57 @@ Regla CSS consta de 2 partes
   atributo: valor;
   atributo-de-mas-dos-palabras: otro-valor;
 }
-*/
 
 h1 {
   color: white;
-  background-color: #074173;
+  background-color: #16324f;
   text-align: center;
 }
 
-/*
+body {
+  background-color: #0d1117;
+  color: #fff;
+  padding: 20px;
+}
+
+    colores
+        #074173
     Selectores basicos 
-    1) Etiquetas son elementos html
-    2) Identificadores atributo id #
-    3) Clase atributo class .
+        1) Etiquetas son elementos html
+        2) Identificadores atributo id #
+        3) Clase atributo class .
 */
 
-body {
-  background-color: #0d1117; /* Color oscuro de fondo */
-  color: #fff; /* Color de texto blanco */
-  padding: 20px;
+.bg-sky-blue {
+  background-color: skyblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*no usar id pa css*/
+#parrafoDos {
+  background-color: #fff;
+}
+
+/*dar estilos en clase nois permite reutilizar nuestro codigo css*/
+.text20 {
+  font-size: 20px;
+}
+
+.text32 {
+  font-size: 32px;
+}
+
+.text-white {
+  color: white;
+}
+
+.hijosDirectos > li {
+  background-color: crimson;
 }
