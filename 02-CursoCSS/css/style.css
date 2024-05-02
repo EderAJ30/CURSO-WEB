@@ -62,3 +62,91 @@ html {
 .hijosDirectos > li {
   background-color: crimson;
 }
+
+.hijosDecendientes b {
+  background-color: crimson;
+}
+
+/*los selectores de hermanos van a aplicar a los elementos que son hermanos y que esten por debajo del elemento de referencia*/
+.hermanosGeneral ~ li {
+  background-color: crimson;
+}
+
+.hermanosAdyacentes + li {
+  background-color: crimson;
+}
+/*selectores de atributos*/
+.selectoresAtributos a[href] {
+  color: orange;
+}
+
+.selectoresAtributos a[target="_blank"] {
+  /*negritas*/
+  font-weight: bold;
+}
+
+/*si el href tiene este texto en cualquier parte*/
+.selectoresAtributos a[href*="jonmircha"] {
+  /*tamanio del texto*/
+  font-size: 24px;
+}
+
+/* ^ cuando contiene el texto al inicio*/
+.selectoresAtributos a[href^="https"] {
+  /*le quita la decoracion*/
+  text-decoration: none;
+}
+
+/* $ cuando contiene el texto al termino*/
+.selectoresAtributos a[href$="com"] {
+  color: aqua;
+}
+
+/*separa por espacios */
+.selectoresAtributos a[class~="Button"] {
+  background-color: blue;
+}
+
+/*el comodin de | aplica al estilo si contiene el texto en cuestion en una lista separada por espacios y que despues del texto en cuestion pueda venir de un guion medioS*/
+.selectoresAtributos a[class|="Button"] {
+  font-style: italic;
+}
+
+/**/
+* {
+  font-family: sans-serif;
+}
+
+.selectorUniversal * {
+  font-size: 24px;
+}
+
+/*dan estilos dependiendo del contexto, posicion estado o elementos*/
+.formPseudoclases *:required {
+  border-color: orange;
+}
+
+.formPseudoclases *:valid {
+  border-color: green;
+}
+
+.formPseudoclases *:invalid {
+  border-color: red;
+}
+
+.formPseudoclases *:focus {
+  background-color: skyblue;
+}
+
+.formPseudoclases *:disabled {
+  background-color: red;
+}
+
+.menuPseudoClases a:visited {
+  color: red;
+}
+
+/*hasta el final*/
+.menuPseudoClases a:hover {
+  color: greenyellow;
+}
