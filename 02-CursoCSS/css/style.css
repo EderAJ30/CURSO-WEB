@@ -28,6 +28,7 @@ body {
         2) Identificadores atributo id #
         3) Clase atributo class .
 */
+/*2:32:36*/
 
 .bg-sky-blue {
   background-color: skyblue;
@@ -112,7 +113,6 @@ html {
   font-style: italic;
 }
 
-/**/
 * {
   font-family: sans-serif;
 }
@@ -171,6 +171,71 @@ html {
   color: navy;
 }
 
+/*de cuatro en cuatro*/
 .listaPseudo li:nth-child(4n) {
   font-size: 20px;
 }
+
+.listaPseudo li:nth-child(3n + 1) {
+  font-weight: bold;
+}
+
+/*pares*/
+.listaPseudo li:nth-child(even) {
+  background-color: yellow;
+}
+
+/*impares*/
+.listaPseudo li:nth-child(odd) {
+  background-color: orange;
+}
+
+/*primer parrafo hijo del article le pondra rosa*/
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+/*ultimo*/
+.articulo-pseudoclases p:last-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+  background-color: teal;
+}
+
+/*si son diferentes de p se tintan*/
+.articulo-pseudoclases *:not(p) {
+  background-color: beige;
+}
+
+/*pseudoelementos*/
+.geminis::before {
+  content: " GOAT ";
+  background-color: violet;
+}
+
+.geminis::after {
+  content: " GOATT ";
+}
+
+.p-psuedoelementos::first-letter {
+  font-weight: bold;
+  font-size: 32px;
+  background-color: yellowgreen;
+}
+
+.p-psuedoelementos::first-line {
+  color: coral;
+}
+
+/*selector del mouse*/
+.p-psuedoelementos::selection {
+  color: greenyellow;
+  background-color: black;
+}
+
+.input-pseudoelementos::placeholder {
+  color: green;
+}
+
+/*3:01*/
