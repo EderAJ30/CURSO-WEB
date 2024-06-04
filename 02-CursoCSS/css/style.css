@@ -150,3 +150,27 @@ html {
 .menuPseudoClases a:hover {
   color: greenyellow;
 }
+
+.pPsuedoclases {
+  font-size: 20px;
+}
+
+#temarioCSS:target {
+  background-color: grey;
+}
+
+.listaPseudo li:first-child {
+  color: green;
+}
+
+.listaPseudo li:last-child {
+  color: violet;
+}
+
+.listaPseudo li:nth-child(3) {
+  color: navy;
+}
+
+.listaPseudo li:nth-child(4n) {
+  font-size: 20px;
+}
