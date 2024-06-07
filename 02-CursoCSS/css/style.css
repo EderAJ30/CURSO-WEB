@@ -31,11 +31,11 @@ body {
 /*2:32:36*/
 
 .bg-sky-blue {
-  background-color: skyblue;
+  background-color: cadetblue;
 }
 
 .bg-steelblue {
-  background-color: steelblue;
+  background-color: cadetblue;
 }
 
 html {
@@ -61,20 +61,20 @@ html {
 }
 
 .hijosDirectos > li {
-  background-color: crimson;
+  background-color: cadetblue;
 }
 
 .hijosDecendientes b {
-  background-color: crimson;
+  background-color: cadetblue;
 }
 
 /*los selectores de hermanos van a aplicar a los elementos que son hermanos y que esten por debajo del elemento de referencia*/
 .hermanosGeneral ~ li {
-  background-color: crimson;
+  background-color: cadetblue;
 }
 
 .hermanosAdyacentes + li {
-  background-color: crimson;
+  background-color: cadetblue;
 }
 /*selectores de atributos*/
 .selectoresAtributos a[href] {
@@ -100,12 +100,12 @@ html {
 
 /* $ cuando contiene el texto al termino*/
 .selectoresAtributos a[href$="com"] {
-  color: aqua;
+  color: cadetblue;
 }
 
 /*separa por espacios */
 .selectoresAtributos a[class~="Button"] {
-  background-color: blue;
+  background-color: cadetblue;
 }
 
 /*el comodin de | aplica al estilo si contiene el texto en cuestion en una lista separada por espacios y que despues del texto en cuestion pueda venir de un guion medioS*/
@@ -156,19 +156,19 @@ html {
 }
 
 #temarioCSS:target {
-  background-color: grey;
+  background-color: cadetblue;
 }
 
 .listaPseudo li:first-child {
-  color: green;
+  color: chartreuse;
 }
 
 .listaPseudo li:last-child {
-  color: violet;
+  color: cadetblue;
 }
 
 .listaPseudo li:nth-child(3) {
-  color: navy;
+  color: blue;
 }
 
 /*de cuatro en cuatro*/
@@ -182,12 +182,12 @@ html {
 
 /*pares*/
 .listaPseudo li:nth-child(even) {
-  background-color: yellow;
+  background-color: grey;
 }
 
 /*impares*/
 .listaPseudo li:nth-child(odd) {
-  background-color: orange;
+  background-color: cadetblue;
 }
 
 /*primer parrafo hijo del article le pondra rosa*/
@@ -246,7 +246,7 @@ html {
   border-color: coral;
   border-width: 2px;
   border-style: dashed;
-  background-color: blue;
+  background-color: cadetblue;
   font-size: 20px;
   display: block;
   width: 300px;
@@ -281,7 +281,7 @@ https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
 */
 
 blockquote#marco-aurelio.marco-aurelio {
-  background-color: blue;
+  background-color: cadetblue;
 }
 
 blockquote {

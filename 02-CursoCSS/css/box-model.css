@@ -75,9 +75,150 @@ Caja de Bloque
 
 .caja-bloque {
     margin: 32px;
-
+    display: block;
 }
 
 .caja-linea {
     margin: 48px;
+    display: inline;
 }
+
+/* 
+Propiedad Display
+  inline
+  block
+  inline-block - Se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho)
+  none
+  table
+  list-item
+  flex 
+  grid 
+*/
+/* .caja-none,
+.caja-linea-bloque {
+    background-color: darkblue;
+    color: aliceblue;
+    width: 600px;
+    height: 300px;
+} */
+
+.caja-none,
+.caja-linea-bloque,
+.caja-hidden {
+    background-color:cadetblue;
+    color: aliceblue;
+    width: 600px;
+    height: 300px;
+}
+
+.caja-linea-bloque {
+    display: inline-block;
+}
+
+.caja-none {
+    display: none;
+}
+
+.caja-hidden {
+    visibility: hidden;
+}
+
+.overflow {
+    color: aliceblue;
+    background-color: cadetblue;
+    width: 200px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+/*tamanio de caja*/
+.box-sizing-content,
+.box-sizing-border {
+    background-color: cadetblue;
+    box-sizing: content-box;
+    color: aliceblue;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+
+}
+
+.box-sizing-border {
+    box-sizing: border-box;
+}
+
+.container-col-3 {
+    background-color: cadetblue;
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.container-col-3 > * {
+    box-sizing: border-box;
+    width: 200px;
+    border: thin solid grey;
+    float: left;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /*float*/
+
+  .container-float {
+    background-color: cadetblue;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  .float-right {
+    float: right;
+  }
+
+  .clearflix {
+    clear: both;
+  }
+
+  /*Colapso de margenes verticales*/
+
+  .margin-collapse{
+    background-color: cadetblue;
+  }
+
+  .margin-collapse section {
+    border: thin solid black;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .margin-collapse span {
+    border: thin solid black;
+    display: inline-block;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  /*Centrado de cajas*/
+
+  .sitio-web {
+    border: thin solid black;
+    background-color: cadetblue;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    /* text-align: center; solo centra las letras*/ 
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; cuando este seguro que no hay margin top y botoomm*/
+  }
