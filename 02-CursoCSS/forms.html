@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en CSS</title>
+    <link rel="stylesheet" href="/02-CursoCSS/css/forms.css">
+</head>
+<body>
+    <h1>Formulario en CSS</h1>
+    <form class="contact-form" method="post">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre, solo acepta letras y espacios en blanco">
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Correo invalido" required>
+        <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Escribe tus comentarios" required></textarea>
+        <input type="submit">
+      </form>
+      <br>
+      <a href="index.html#temarioCSS">back</a>
+</body>
+</html>
