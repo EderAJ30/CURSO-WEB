@@ -92,12 +92,39 @@ img {
 }
 
 p {
+    line-height: 1.6;
+
     p {
         line-height: 1.6;
     }
 }
 
 /* Componentes R */
+
+/* HeroImage */
+
+.hero-image {
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: var(--attachment);
+}
+
+.hero-image-opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);
+}
+
+.hero-image-title {
+    font-size: 7.5vw;
+    color: var(--hero-text-color);
+}
 
 /* Menu R */
 
@@ -171,10 +198,66 @@ p {
     }
 }
 
+/* ********** ProgressBar ********** */
+
+progress {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--gray-color);
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--gray-color);
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--gray-dark-color);
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--gray-dark-color);
+}
+
+.progress {
+    margin: 1rem auto;
+}
+
+.progress>p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
 /* Utilidades R */
+
+.Habilidades {
+    padding: 0.5rem;
+}
+
+.tech {
+    padding: 6px;
+}
+
+.bg-gray-light {
+    background-color: var(--gray-light-color);
+}
 
 .box-shadow-1 {
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    /* margin: 0.5rem; */
 }
 
 .container {
@@ -187,7 +270,50 @@ p {
     display: none;
 }
 
+.section {
+    padding: 2rem 1rem;
+}
+
+.section-title {
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    color: var(--title-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-lg-center {
+        text-align: center;
+    }
+
+    .text-lg-left {
+        text-align: left;
+    }
+
+    .text-lg-right {
+        text-align: right;
+    }
+}
+
 /* Estilos de la pagina web */
+
+.about>article {
+    margin-bottom: 2rem;
+}
 
 .header {
     position: fixed;
@@ -213,13 +339,65 @@ p {
     text-decoration: none;
 }
 
-@media screen and (min-width:768px) {}
+.service-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
 
-@media screen and (min-width:1024px) {
+.service-card h3 {
+    color: var(--title-color);
+}
+
+.service-card svg {
+    fill: var(--first-color);
+    margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width:768px) { /* tablet */
+    .services > .container {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .services .section-title {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width:1024px) { /* deskstop */
+
+    .progress {
+        margin: 2rem auto;
+    }
+
+    .full-lg-screen {
+        width: 100%;
+        min-height: 85vh;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+        align-content: center;
+    }
+
     .header {
         position: sticky;
         top: 0;
         padding: 0.5rem;
         height: calc(var(--header-height) - 0.5rem);
+    }
+
+    .services > .container {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+    }
+
+    .services .section-title {
+        grid-column: span 3;
     }
 }
